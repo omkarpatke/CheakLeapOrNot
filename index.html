@@ -3,40 +3,65 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Leap Year</title>
-    <style>
-        #get {
-            height: 20vh;
-            width: 30vw;
-            margin-left: 32rem;
-            margin-bottom: 2rem;
-            border: solid black;
-        }
-        
-        #check-btn {
-            font-size: 1.3rem;
-            margin-left: 34rem;
-            margin-bottom: 2rem;
-        }
-        
-        .output {
-            height: 20vh;
-            width: 30vw;
-            margin-left: 32rem;
-            border: solid;
-        }
-    </style>
 </head>
+<style>
+    textarea {
+        height: 20vh;
+        width: 35vw;
+        margin-bottom: 4rem;
+        border-radius: 1rem;
+        border: solid black;
+        font-size: 1.5rem;
+        padding-left: 3rem;
+        padding-top: 1rem;
+    }
+    
+    #output {
+        border: solid black;
+        height: 20vh;
+        width: 35vw;
+        margin-left: 10rem;
+        padding-left: 4rem;
+        border-radius: 1rem;
+        border-collapse: collapse;
+        font-size: 1.5rem;
+        padding-left: 3rem;
+        padding-top: 1rem;
+    }
+    
+    .main {
+        border: solid black;
+        padding-bottom: 4rem;
+        margin-left: 20rem;
+        margin-right: 20rem;
+    }
+    
+    body {
+        background-color: rgb(246, 249, 252);
+    }
+</style>
+
+
 
 <body>
-    <h1 style="text-align: center;">You Born in Leap Year??</h1>
-    <textarea name="input" id="get" class="get" cols="30" rows="10" placeholder="Give Me Your Birth Year For Cheaking Leap Year or Not! !" style="margin-top: 1rem; padding-top: 3rem; padding-left: 2rem;"></textarea>
+    <div class="main">
 
-    <button id="check-btn" onclick="clickHandler">Let's Check</button>
-    <div class="output"></div>
-    <script src="app.js" type="text/javascript"></script>
+        <h1 style="text-align: center;margin-bottom: 2rem;margin-top: 4rem;"> You Born in Leap Year ?? </h1>
+        <h2 style="text-align: center;margin-bottom: 2rem;margin-top: 3rem;">Let's Check</h2>
+
+        <div class="in" style="margin-left: 10rem;height: 20vh; width: 20vw;">
+            <textarea name="inyear" id="getin" placeholder="Enter Your Birth Year Here !!  "></textarea>
+        </div>
+
+        <button id="btncheck" style="font-size: 1.3rem; margin-left: 13rem; margin-top: 4rem; margin-bottom: 2rem;">Let's Check !</button>
+
+        <div id="output"></div>
+    </div>
+
+    <script src="leap.js"></script>
 </body>
 
 </html>
